@@ -15,7 +15,7 @@ export default function App() {
       <Projects />
       <Contact />
       <footer className="text-center py-6 text-gray-500">
-        © 2025 Khanh — Frontend Developer
+        © 2025 KhanhConn — Frontend Developer
       </footer>
     </div>
   );

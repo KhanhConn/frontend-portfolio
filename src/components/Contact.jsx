@@ -6,7 +6,7 @@ export default function Contact() {
         Want to collaborate or hire me? Reach out via email below 👇
       </p>
       <a href="mailto:your-email@example.com" className="text-blue-600 font-medium hover:underline">
-        your-email@example.com
+        khanhconn04@gmail.com
       </a>
     </section>
   );
