@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import bghero from "../assets/bg_hero.jpg";
 
 function Hero() {
   return (
@@ -6,7 +7,7 @@ function Hero() {
       id="home"
       className="relative flex flex-col items-center justify-center min-h-screen text-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('/src/assets/bg_hero.jpg')", 
+        backgroundImage: `url(${bghero} )`, 
       }}
     >
 
