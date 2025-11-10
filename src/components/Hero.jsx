@@ -6,7 +6,7 @@ function Hero() {
       id="home"
       className="relative flex flex-col items-center justify-center min-h-screen text-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('/src/assets/bg_hero.png')", 
+        backgroundImage: "url('/src/assets/bg_hero.jpg')", 
       }}
     >
 
