@@ -9,7 +9,7 @@ function Hero() {
         backgroundImage: "url('/src/assets/bg_hero.png')", 
       }}
     >
-      {/* Lớp phủ mờ */}
+
       <div className="absolute inset-0 bg-black/60"></div>
 
       <motion.div

@@ -13,6 +13,7 @@ export default function Header() {
           KhanhConn
         </h1>
       </div>
+
       <nav className="flex gap-6 text-gray-600">
         <a href="#about" className="hover:text-blue-600">About</a>
         <a href="#skills" className="hover:text-blue-600">Skills</a>
