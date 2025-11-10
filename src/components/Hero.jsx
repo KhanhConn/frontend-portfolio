@@ -1,38 +1,39 @@
-// export default function Hero() {
-//   return (
-//     <section className="flex flex-col items-center justify-center h-[80vh] text-center">
-//       <h1 className="text-4xl md:text-6xl font-bold mb-3">Hi, I’m Khanh 👋</h1>
-//       <p className="text-lg text-gray-600 mb-6">
-//         A passionate Frontend Developer from Vietnam.
-//       </p>
-//       <a href="#projects" className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
-//         View My Work
-//       </a>
-//     </section>
-//   );
-// }
 import { motion } from "framer-motion";
 
-export default function Hero() {
+function Hero() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900">
-      <motion.h1
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white"
-      >
-        Hello, I’m <span className="text-blue-500">KhanhConn</span>
-      </motion.h1>
+    <section
+      id="home"
+      className="relative flex flex-col items-center justify-center min-h-screen text-center bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/src/assets/bg_hero.png')", 
+      }}
+    >
+      {/* Lớp phủ mờ */}
+      <div className="absolute inset-0 bg-black/60"></div>
 
-      <motion.p
+      <motion.div
+        className="relative z-10 text-white flex flex-col items-center gap-4"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.8 }}
-        className="text-gray-600 dark:text-gray-300 mt-4 text-lg"
+        transition={{ duration: 1 }}
       >
-        Frontend Developer | React Enthusiast
-      </motion.p>
+        <h1 className="text-5xl font-bold">
+          Hello, I’m <span className="text-blue-400">KhanhConn</span>
+        </h1>
+        <p className="text-lg text-gray-200">
+          Frontend Developer | React Enthusiast
+        </p>
+        <motion.a
+          href="#contact"
+          className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition"
+          whileTap={{ scale: 0.95 }}
+        >
+          Contact Me
+        </motion.a>
+      </motion.div>
     </section>
   );
 }
+
+export default Hero;
